@@ -45,7 +45,7 @@ def start_parse(start):
                 proff = proff.text
 
             if (salary == ''):
-                print('salary is none!')
+                print('salary is empty!')
                 time.sleep(0.1)
                 start -= 1
                 continue
