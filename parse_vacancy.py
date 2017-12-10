@@ -60,10 +60,8 @@ def start_parse(start):
             img_data = requests.get(img_url['src']).content
             with open('resume_img/'+str(start)+'.jpg', 'wb') as f:
                 f.write(img_data)
-            with open('resume_id.txt', 'a') as f:
-                f.write(str(start)+'\n')
-            with open('resume_salaryes.txt', 'a') as f:
-                f.write(salary+','+proff+'\n')
+            with open('resume_data.txt', 'a') as f:
+                f.write(str(start)+','+salary+','+proff+'\n')
 
             count += 1
             print(count)
