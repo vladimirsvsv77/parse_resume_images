@@ -30,7 +30,7 @@ def start_parse(start):
 
             if (salary is None):
                 print('salary is none!')
-                time.sleep(0.2)
+                time.sleep(0.1)
                 start -= 1
                 continue
             else:
@@ -38,7 +38,7 @@ def start_parse(start):
 
             if (proff is None):
                 print('proff is none!')
-                time.sleep(0.2)
+                time.sleep(0.1)
                 start -= 1
                 continue
             else:
@@ -69,7 +69,7 @@ def start_parse(start):
         except Exception as e:
             print(e)
         if start % 100 == 0:
-            time.sleep(3.2)
+            time.sleep(1.2)
         time.sleep(0.2)
         start -= 1
 
